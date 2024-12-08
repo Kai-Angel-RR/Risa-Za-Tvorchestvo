@@ -1,0 +1,134 @@
+/* Сброс отступов и полей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Фон всех страниц */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+/* Общий стиль для логотипа */
+.logo {
+    width: 100px;
+    margin: 10px;
+}
+
+/* Логотип по центру на главной странице */
+.center-logo {
+    display: block;
+    margin: 10px auto;
+}
+
+/* Логотип слева сверху на остальных страницах */
+.left-logo {
+    display: block;
+    margin: 10px;
+}
+
+/* Стиль для разделительной линии */
+.divider {
+    border: none;
+    border-top: 2px solid #333333;
+    margin: 20px 0;
+}
+
+/* Цвет заголовков */
+h1, h2 {
+    color: #333333;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Стили для параграфов */
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Стиль для анимации */
+.animation {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Стили для формы */
+form {
+    max-width: 500px;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+form label {
+    font-size: 18px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    width: auto;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555555;
+}
+
+
+
+/* Стиль для изображения с текстом */
+.image-with-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.image-with-text img {
+    margin-right: 20px;
+    width: 300px;
+}
+
+.image-with-text p {
+    max-width: 600px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+/* Стили для нумерованных и маркированных списков */
+ol, ul {
+    margin: 20px;
+    padding-left: 40px; /* Добавляем отступ слева для списков */
+}
+
+li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+

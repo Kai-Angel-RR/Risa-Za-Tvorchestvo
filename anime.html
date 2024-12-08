@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Аниме</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style = "background:url('images/Nigga.png') no-repeat center; background-size: cover; background-attachment: fixed;  ">
+    <a href="index.html">
+        <img src="images/logo.png" alt="Главная страница" class="logo">
+    </a>
+
+    <!-- Остальное содержимое страницы -->
+
+      <!-- Контент -->
+
+
+    <body>
+        
+
+    <!-- Разделительная линия -->
+    <hr class="divider">
+
+    <!-- Содержимое страницы -->
+    <h1>Страница оценки аниме</h1>
+    <div class="image-with-text">
+        <img src="images/Ichigo.png" alt="Аниме">
+        <p>Это описание выбранного аниме. Здесь вы можете узнать больше об этом произведении, его сюжете и персонажах.</p>
+    </div>
+
+    <!-- Форма для отзыва -->
+    <h2>Оставьте свой отзыв об аниме</h2>
+    <form>
+    <!-- Текстовое поле -->
+    <label for="animeTitle">Название аниме:</label><br>
+    <input type="text" id="animeTitle" name="animeTitle"><br><br>
+
+    <!-- Переключатели -->
+    <p>Какой жанр вы предпочитаете?</p>
+    <div class="radio-group">
+        <label>
+            <input type="radio" id="genre1" name="genre" value="Приключения">
+            Приключения
+        </label>
+        <label>
+            <input type="radio" id="genre2" name="genre" value="Исекай">
+            Исекай
+        </label>
+        <label>
+            <input type="radio" id="genre3" name="genre" value="Сёнен">
+            Сёнен
+        </label>
+    </div><br><br>
+
+    <!-- Раскрывающийся список -->
+    <label for="rating">Ваша оценка:</label><br>
+    <select id="rating" name="rating">
+        <option value="10">10</option>
+        <option value="9">9</option>
+        <option value="8">8</option>
+        <option value="7">7</option>
+        <option value="6">6</option>
+        <option value="5">5</option>
+        <option value="4">4</option>
+        <option value="3">3</option>
+        <option value="2">2</option>
+        <option value="1">1</option>
+    </select><br><br>
+
+    <!-- Надпись -->
+    <p>Спасибо за ваш отзыв!</p>
+
+    <!-- Кнопка отправки -->
+    <input type="submit" value="Отправить">
+</form>
+
+<style>
+    .radio-group label {
+        display: inline-block;
+        margin-right: 15px;
+    }
+</style>
+
+</body>
+
+
+
+    <h2>Полезные документы</h2>
+    <ul>
+        <li><a href="docs/guide.pdf">Руководство (PDF)</a></li>
+        <li><a href="docs/manual.docx">Инструкция (DOCX)</a></li>
+        <li><a href="images/sample.jpg">Пример изображения (JPG)</a></li>
+        <li><a href="docs/data.xlsx">Данные (XLSX)</a></li>
+    </ul>
+</body>
+</html>

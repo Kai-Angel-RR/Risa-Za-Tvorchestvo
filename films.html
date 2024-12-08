@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Фильмы</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style = "background:url('images/Nigga.png') no-repeat center; background-size: cover; background-attachment: fixed;  ">
+
+    <a href="index.html">
+        <img src="images/logo.png" alt="Главная страница" class="logo">
+    </a>
+    <hr class="divider">
+
+    <!-- Остальное содержимое страницы -->
+
+    <!-- Логотип и анимация -->
+    <!-- ... -->
+
+    <!-- Форма ввода -->
+    <h2>Оцените просмотренный фильм</h2>
+    <form id="reviewForm">
+        <label for="movieName">Название фильма:</label><br>
+        <input type="text" id="movieName" name="movieName"><br><br>
+
+        <label for="movieRating">Ваша оценка (от 1 до 10):</label><br>
+        <input type="number" id="movieRating" name="movieRating" min="1" max="10"><br><br>
+
+        <input type="submit" value="Отправить">
+    </form>
+
+    <p id="feedback"></p>
+
+    <!-- Скрипт обработки формы -->
+    <script>
+        document.getElementById('reviewForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('movieName').value;
+            const rating = document.getElementById('movieRating').value;
+            const feedback = document.getElementById('feedback');
+
+            if (name && rating) {
+                feedback.textContent = `Спасибо! Вы оценили фильм "${name}" на ${rating} из 10.`;
+            } else {
+                feedback.textContent = 'Пожалуйста, заполните все поля формы.';
+            }
+        });
+    </script>
+
+    <h2>Полезные документы</h2>
+    <ul>
+        <li><a href="docs/guide.pdf">Руководство (PDF)</a></li>
+        <li><a href="docs/manual.docx">Инструкция (DOCX)</a></li>
+        <li><a href="images/sample.jpg">Пример изображения (JPG)</a></li>
+        <li><a href="docs/data.xlsx">Данные (XLSX)</a></li>
+    </ul>
+</body>
+</html>
