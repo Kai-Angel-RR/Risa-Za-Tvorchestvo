@@ -5,7 +5,7 @@
     <title>Музыка</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body style = "background:url('images/Nigga.png') no-repeat center; background-size: cover; background-attachment: fixed;  ">
+<body style = "background:url('images/fone.jpg') no-repeat center; background-size: cover; background-attachment: fixed;  ">
     <a href="index.html">
         <img src="images/logo.png" alt="Главная страница" class="logo">
     </a>
@@ -16,22 +16,98 @@
     <!-- Логотип -->
     <!-- ... -->
 
+  <form id="ratingForm">
+    <label for="artist">Введите имя исполнителя:</label>
+    <input type="text" name="artist" id="artist" placeholder="Имя исполнителя" required>
+
+    <label for="track">Введите название трека:</label>
+    <input type="text" name="track" id="track" placeholder="Название трека" required>
+
+    <label for="rhymes">Рифмы / Образы:</label>
+    <select name="rhymes" id="rhymes" required>
+      <option value="" disabled selected>Выберите оценку</option>
+      <!-- Оценки от 1 до 10 -->
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+
+    <label for="style">Реализация стиля:</label>
+    <select name="style" id="style" required>
+      <option value="" disabled selected>Выберите оценку</option>
+      <!-- Оценки от 1 до 10 -->
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+
+    <label for="individuality">Индивидуальность / Харизма:</label>
+    <select name="individuality" id="individuality" required>
+      <option value="" disabled selected>Выберите оценку</option>
+      <!-- Оценки от 1 до 10 -->
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+
+    <label for="atmosphere">Атмосфера / Вайб:</label>
+    <select name="atmosphere" id="atmosphere" required>
+      <option value="" disabled selected>Выберите оценку</option>
+      <!-- Оценки от 1 до 10 -->
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+
+    <button type="submit">Отправить</button>
+</form>
+
+
+    
     <h2>Топ 5 популярных исполнителей</h2>
     <ol>
-        <li>Исполнитель 1</li>
-        <li>Исполнитель 2</li>
-        <li>Исполнитель 3</li>
-        <li>Исполнитель 4</li>
-        <li>Исполнитель 5</li>
+        <li>Yeat</li>
+        <li>Travis Scott</li>
+        <li>Playboi Cart</li>
+        <li>Destroy Lonely</li>
+        <li>Ken KarsonS</li>
     </ol>
 
     <h2>Жанры музыки</h2>
     <ul style="list-style-type: square;">
-        <li>Рок</li>
-        <li>Поп</li>
-        <li>Джаз</li>
-        <li>Хип-хоп</li>
-        <li>Электронная музыка</li>
+        <li>Super trap</li>
+        <li>trap</li>
+        <li>Ellectronik</li>
+        <li>Ambient</li>
+        <li>phonk</li>
     </ul>
 </body>
 
@@ -40,10 +116,9 @@
 
     <h2>Полезные документы</h2>
     <ul>
-        <li><a href="docs/guide.pdf">Руководство (PDF)</a></li>
-        <li><a href="docs/manual.docx">Инструкция (DOCX)</a></li>
-        <li><a href="images/sample.jpg">Пример изображения (JPG)</a></li>
-        <li><a href="docs/data.xlsx">Данные (XLSX)</a></li>
+        <li><a href="docs/Оценка Музыки.odt">Руководство (DOX)</a></li>
+        <li><a href="docs/manual.docx">Руководство (PDF)</a></li>
+        <li><a href="docs/Исполнители.ods">Данные (XLSX)</a></li>
     </ul>
 </body>
 </html>
